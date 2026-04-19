@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sebastian Segovia | XR Developer</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0f1c;
+  color: #e2e8f0;
+}
+
+header {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.subtitle {
+  color: #38bdf8;
+  margin-top: 10px;
+}
+
+.section {
+  padding: 40px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.card {
+  background: #111827;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background: #1f2937;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9em;
+  opacity: 0.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Sebastian Segovia</h1>
+  <p class="subtitle">XR Developer • Unity Engineer • Interactive Systems</p>
+</header>
+
+<section class="section">
+  <h2>About</h2>
+  <div class="card">
+    Digital Entertainment Design Engineer and XR Developer with 7+ years of experience building VR/AR systems, games, and interactive applications. Specialized in Unity, C#, and scalable immersive architectures.
+  </div>
+</section>
+
+<section class="section">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <strong>Game Developer — Creative Innovation Company</strong>
+    <p>VR games, Firebase systems, AI assistants, remote content delivery, analytics.</p>
+  </div>
+
+  <div class="card">
+    <strong>Game Developer — Timba Games</strong>
+    <p>VR interaction systems, procedural systems, deployment and maintenance.</p>
+  </div>
+
+  <div class="card">
+    <strong>Junior Developer — Konecta</strong>
+    <p>AR applications, UI systems, interaction mechanics.</p>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Systems Built</h2>
+
+  <div class="grid">
+    <div class="card">Authentication & Progress Tracking</div>
+    <div class="card">VR Interaction Frameworks</div>
+    <div class="card">AI Virtual Assistants</div>
+    <div class="card">Remote Content Delivery</div>
+    <div class="card">Analytics (Firebase / CRM)</div>
+    <div class="card">Licensing Systems</div>
+  </div>
+
+</section>
+
+<section class="section">
+  <h2>Tech Stack</h2>
+  <div class="card">
+    Unity (C#) • Unreal Engine • XR/AR • Firebase • REST APIs • SQL • Blender • Git
+  </div>
+</section>
+
+<section class="section">
+  <h2>Links</h2>
+  <div class="card">
+    <p><a href="https://github.com/Michikatsu0" target="_blank">GitHub</a></p>
+    <p><a href="https://drive.google.com/drive/folders/1exIU2Wl1Ugrl13nE392OMAYsbcxcgpuS" target="_blank">Portfolio</a></p>
+    <p>Email: sebastiansegoviamedina@gmail.com</p>
+  </div>
+</section>
+
+<div class="footer">
+  © 2026 Sebastian Segovia
+</div>
+
+</body>
+</html>
