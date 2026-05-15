@@ -95,8 +95,23 @@ nav a:hover{
     width:100%;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
+    gap:80px;
     align-items:center;
+}
+
+.hero-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.hero-image{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid rgba(56,189,248,.3);
 }
 
 .hero h1{
@@ -293,7 +308,10 @@ padding:80px 8%;
 <section class="hero">
 <div class="hero-container">
     
-<div>
+<div class="hero-left">
+
+<img src="TU-IMAGEN.png" alt="Sebastian XR Developer" class="hero-image">
+
 <h1><span id="typing"></span></h1>
 
 <p>
