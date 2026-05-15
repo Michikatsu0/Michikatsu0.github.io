@@ -343,6 +343,25 @@ footer{
     transform:translateY(0);
 }
 
+.exp-row{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.exp-img{
+    width:80px;
+    height:80px;
+    object-fit:cover;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    flex-shrink:0;
+}
+
+.exp-text{
+    flex:1;
+}
+    
 /* ========================= */
 /* DESKTOP MEDIANO */
 /* ========================= */
@@ -434,7 +453,15 @@ section{
 .hero-image{
     max-width:260px;
 }
+    
+.exp-row{
+    flex-direction:row; /* mantiene tu estructura general */
+}
 
+.exp-img{
+    width:60px;
+    height:60px;
+}
 }
     
 </style>
@@ -580,12 +607,30 @@ Performance optimization for standalone VR hardware including CPU/GPU profiling,
 <div class="timeline">
 
 <div class="card fade">
-<h3>Game Developer — Creative Innovation Company</h3>
-<div class="date">Medellín, Colombia • On-site • Oct 2024 – Mar 2026</div>
 
-<p>
-Lead developer of gamified Virtual Reality experiences. Implemented backend support systems, software licensing systems, and user authentication architectures. Also worked as Game Producer building professional production pipelines and scalable VR development frameworks.
-</p>
+    <div class="exp-row">
+
+        <img 
+        class="exp-img" 
+        src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Experiences/CIC.png"
+        alt="Creative Innovation Company">
+
+        <div class="exp-text">
+
+            <h3>Game Developer — Creative Innovation Company</h3>
+
+            <div class="date">
+                Medellín, Colombia • On-site • Oct 2024 – Mar 2026
+            </div>
+
+            <p>
+                Lead developer of gamified Virtual Reality experiences. Implemented backend support systems, software licensing systems, and user authentication architectures. Also worked as Game Producer building professional production pipelines and scalable VR development frameworks.
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
 
 <div class="card fade">
