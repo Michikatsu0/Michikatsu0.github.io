@@ -93,9 +93,14 @@ nav a:hover{
 .hero-container{
     max-width:1600px;
     width:100%;
+
     display:grid;
-    grid-template-columns:1.4fr .9fr;
-    gap:80px;
+    grid-template-columns:
+        minmax(260px,380px)
+        minmax(420px,1fr)
+        minmax(320px,380px);
+
+    gap:50px;
     align-items:center;
 }
 
@@ -111,17 +116,16 @@ nav a:hover{
 }
 
 .hero-image{
-    width:360px;
+    width:100%;
+    max-width:360px;
     height:480px;
     object-fit:cover;
     border-radius:28px;
-    flex-shrink:0;
 }
 
 .hero-text{
-    flex:1;
-    min-width:520px;
-    max-width:650px;
+    width:100%;
+    min-width:0;
 }
 
 .hero h1{
@@ -134,9 +138,8 @@ nav a:hover{
     
 #typing{
     display:block;
-    white-space:nowrap;
-    min-width:520px;
-    max-width:620px;
+    width:100%;
+    word-break:break-word;
 }
 
 .hero h1 span{
@@ -150,6 +153,11 @@ nav a:hover{
     font-size:1.05rem;
 }
 
+.hero-card{
+    width:100%;
+    max-width:380px;
+}
+    
 .buttons{
     display:flex;
     flex-wrap:wrap;
@@ -290,6 +298,23 @@ footer{
     transform:translateY(0);
 }
 
+
+@media(max-width:1250px){
+
+.hero-container{
+    grid-template-columns:
+        minmax(260px,340px)
+        1fr;
+}
+
+.hero-card{
+    grid-column:1 / -1;
+    max-width:100%;
+}
+
+}
+
+    
 @media(max-width:900px){
 .hero-container{
 grid-template-columns:1fr;
@@ -314,6 +339,32 @@ padding:80px 8%;
 }
     
 }
+
+@media(max-width:850px){
+
+.hero-container{
+    grid-template-columns:1fr;
+}
+
+.hero-image-container{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+.hero-card{
+    max-width:100%;
+}
+
+}
+    
 </style>
 </head>
 
@@ -336,9 +387,7 @@ padding:80px 8%;
 <section class="hero">
 <div class="hero-container">
     
-<div class="hero-left">
-
-<div class="hero-content">
+<div class="hero-image-container">
 
 <img src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/DSC02808%20copy.png"
 alt="Sebastian XR Developer"
@@ -359,10 +408,10 @@ Digital Entertainment Design Engineer and XR Developer with over 6 years of prof
 
 <a class="btn btn-primary" href="https://bit.ly/3Ps9kiY" target="_blank">Portfolio</a>
 </div>
+</div>
+</div>
 
-</div>
-</div>
-</div>
+<div class="hero-text">
 
 <div class="card hero-card">
 
