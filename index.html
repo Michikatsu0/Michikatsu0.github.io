@@ -212,28 +212,33 @@ nav a:hover{
     content:'';
 
     position:absolute;
-    top:-50%;
-    left:-50%;
 
-    width:200%;
-    height:200%;
+    top:-120%;
+    left:-250%;
+
+    width:220%;
+    height:350%;
 
     background:
     linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,.05),
-        transparent
+        115deg,
+        transparent 35%,
+        rgba(255,255,255,.03) 45%,
+        rgba(255,255,255,.12) 50%,
+        rgba(255,255,255,.03) 55%,
+        transparent 65%
     );
 
-    transform:rotate(25deg) translateX(-120%);
-    transition:transform .8s ease;
+    transform:rotate(25deg);
+    transition:transform .9s ease;
 
     pointer-events:none;
 }
     
 .card:hover{
-    transform:translateY(-8px);
+    transform:
+        translateY(-8px)
+        scale(1.01);
 
     border-color:rgba(56,189,248,.35);
 
@@ -243,12 +248,15 @@ nav a:hover{
 }
     
 /* Activate highlight */
-.card:hover::before{
-    opacity:1;
+.card{
+    position:relative;
+    overflow:hidden;
 }
     
 .card:hover::after{
-    transform:rotate(25deg) translateX(120%);
+    transform:
+    rotate(25deg)
+    translateX(180%);
 }
     
 .hero-card{
