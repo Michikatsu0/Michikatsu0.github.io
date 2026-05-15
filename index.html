@@ -368,6 +368,33 @@ footer{
 .exp-text{
     flex:1;
 }
+
+.project-card{
+    display:block;
+    overflow:hidden;
+    padding:0; /* importante para full image */
+}
+
+.project-img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+.project-content{
+    padding:28px;
+}
+
+.project-title-link{
+    color:inherit;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.project-title-link:hover{
+    color:#38bdf8;
+}
     
 /* ========================= */
 /* DESKTOP MEDIANO */
@@ -745,50 +772,105 @@ Performance optimization for standalone VR hardware including CPU/GPU profiling,
 
 <div class="grid">
 
-<div class="card fade">
-<h3>It's Boom – VR Adrenaline Experience</h3>
-<p>
-High-intensity VR experience developed for live events and brand activation campaigns.
-</p>
-</div>
+<a class="card fade card-link project-card" href="https://TU_PROYECTO_WEB.com" target="_blank" rel="noopener noreferrer">
 
-<div class="card fade">
-<h3>Camsoda – Meta Venus</h3>
-<p>
-Metaverse platform featuring hyper-realistic Metahuman avatars with real-time face tracking and live streaming systems.
-</p>
-</div>
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/PuppetKings.png" alt="Puppet Kings">
 
-<div class="card fade">
-<h3>Super Personitas – Rolimate</h3>
-<p>
-Gamified VR experience designed to enhance cognitive and physical abilities in children through neuroeducational technologies.
-</p>
-</div>
+    <div class="project-content">
 
-<div class="card fade">
-<h3>CIC – Office Tour</h3>
-<p>
-Interactive VR office tour guided by an AI assistant named ZIA showcasing company products and employee information.
-</p>
-</div>
+        <h3>
+            <a class="project-title-link" href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer">
+                Puppet Kings
+            </a>
+        </h3>
 
-<div class="card fade">
-<h3>SEAM VR</h3>
-<p>
-VR physiotherapy experience designed for elderly users inspired by Colombian regions such as Eje Cafetero, Amazonas and Cartagena.
-</p>
-</div>
+        <p>
+            Breakout-inspired roguelike game featuring unique characters, boss fights, and procedural gameplay systems optimized for Steam.
+        </p>
 
-<div class="card fade">
-<h3>Puppet Kings</h3>
-<p>
-Breakout-inspired roguelike game featuring unique characters, boss fights, and procedural gameplay systems optimized for Steam.
-</p>
-</div>
+    </div>
 
-</div>
-</section>
+</a>
+    
+<a class="card fade card-link project-card" href="https://TU_LINK_ITSBOOM.com" target="_blank" rel="noopener noreferrer">
+
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/ItsBoom.png" alt="It's Boom">
+
+    <div class="project-content">
+
+        <h3>It's Boom – VR Adrenaline Experience</h3>
+
+        <p>
+            High-intensity VR experience developed for live events and brand activation campaigns.
+        </p>
+
+    </div>
+
+</a>
+
+<a class="card fade card-link project-card" href="https://TU_LINK_CAMSODA.com" target="_blank" rel="noopener noreferrer">
+
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/MetaVenus.png" alt="Meta Venus">
+
+    <div class="project-content">
+
+        <h3>Camsoda – Meta Venus</h3>
+
+        <p>
+            Metaverse platform featuring hyper-realistic Metahuman avatars with real-time face tracking and live streaming systems.
+        </p>
+
+    </div>
+
+</a>
+
+<a class="card fade card-link project-card" href="https://TU_LINK_SUPERPERSONITAS.com" target="_blank" rel="noopener noreferrer">
+
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/Rolimate.png" alt="Super Personitas">
+
+    <div class="project-content">
+
+        <h3>Super Personitas – Rolimate</h3>
+
+        <p>
+            Gamified VR experience designed to enhance cognitive and physical abilities in children through neuroeducational technologies.
+        </p>
+
+    </div>
+
+</a>
+
+<a class="card fade card-link project-card" href="https://TU_LINK_CIC_PROJECT.com" target="_blank" rel="noopener noreferrer">
+
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/CIC_Office.png" alt="CIC Office Tour">
+
+    <div class="project-content">
+
+        <h3>CIC – Office Tour</h3>
+
+        <p>
+            Interactive VR office tour guided by an AI assistant named ZIA showcasing company products and employee information.
+        </p>
+
+    </div>
+
+</a>
+
+<a class="card fade card-link project-card" href="https://TU_LINK_SEAM.com" target="_blank" rel="noopener noreferrer">
+
+    <img class="project-img" src="https://media.githubusercontent.com/media/Sego-Thedevlab/images-gifs/main/Projects/SEAM.png" alt="SEAM VR">
+
+    <div class="project-content">
+
+        <h3>SEAM VR</h3>
+
+        <p>
+            VR physiotherapy experience designed for elderly users inspired by Colombian regions such as Eje Cafetero, Amazonas and Cartagena.
+        </p>
+
+    </div>
+
+</a>
 
 <section id="systems">
 <h2 class="section-title">Systems <span>Developed</span></h2>
@@ -853,7 +935,7 @@ Breakout-inspired roguelike game featuring unique characters, boss fights, and p
 <li>C# / .NET</li>
 <li>Python</li>
 <li>C Programming</li>
-<li>REST APIs</li>
+<li>UE Blueprints</li>
 <li>SOLID Principles</li>
 <li>Design Patterns</li>
 </ul>
